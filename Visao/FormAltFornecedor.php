@@ -25,8 +25,8 @@
         ?>
         <form method="post" action="../Controle/ControleFornecedor.php?ACAO=alterarFornecedor" >
                 <input type="hidden" name="idex" value="<?php echo $novoFornecedor->getCodigo(); ?>">
-                Nome:<input class="form-control" type="text" name="nome" size="50" value="<?php echo $novoUsuario->getNome(); ?>" /><br>
-                Email:<input class="form-control" type="email" id="email" name="email" size="40" value="<?php echo $novoFornecedor->getEmail(); ?>"/><br>
+                Nome:<input class="form-control" type="text" name="nome" size="80" value="<?php echo $novoUsuario->getNome(); ?>" /><br>
+                Email:<input class="form-control" type="email" id="email" name="email" size="80" value="<?php echo $novoFornecedor->getEmail(); ?>"/><br>
 				CNPJ:<input class="form-control" type="text" name="cnpj" size="14" value="<?php echo $novoFornecedor->getCNPJ(); ?>" /><br>
 				Status:<input class="form-control" type="number" name="stts" size="1" value="<?php echo $novoFornecedor->getStatus(); ?>" /><br>
                 <br>
