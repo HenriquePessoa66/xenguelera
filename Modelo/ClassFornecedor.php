@@ -22,11 +22,11 @@ class ClassFornecedor {
     }
 	
 	function getCNPJ() {
-        return $this->CNPJ;
+        return $this->cnpj;
     }
 	
 	function getStatus() {
-        return $this->Status;
+        return $this->status;
     }
 
     
