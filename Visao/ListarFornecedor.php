@@ -9,7 +9,7 @@ function checkDelete(){
     require './Modelo/DAO/ClassFornecedorDAO.php';
 
     $classFornecedorDAO = new ClassFornecedorDAO();
-    $us = $classFornecedorDAO->listarfornecedor();
+    $us = $classFornecedorDAO->listarfornecedores();
 
     echo "<table class='table'>";
     echo "  <tr>";
