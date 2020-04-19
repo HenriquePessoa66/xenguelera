@@ -24,7 +24,7 @@
                 <br>
 				
 				<br>
-                CNPJ:<input class="form-control" type="text" name="cnpj" maxlength="14" placeholder="Digite o CNPJ" />
+                CNPJ:<input class="form-control" type="number" name="cnpj" maxlength="14" placeholder="Digite o CNPJ" />
                 <br>
 				
                 <button class="btn btn-primary" type="submit" value="Registrar">Cadastrar</button> 
