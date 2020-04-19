@@ -17,20 +17,20 @@ class ClassFornecedorDAO {
             echo $exc->getMessage();
         }
     }
-    public function listarFornecedor() {
+    public function listarFornecedores() {
 	    try {
 		    $pdo = Conexao::getInstance();
 		    $sql = "SELECT * FROM fornecedor";
 		    $stmt = $pdo->prepare($sql);
 		    $stmt->execute();
-		    $alunos = $stmt->fetchAll(PDO::FETCH_ASSOC);
-		    return $fornecedor;
+		    $fornecedores = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		    return $fornecedores;
 	    } catch (PDOException $exc) {
 		    echo $exc->getMessage();
 		
 	       }
 	}
-	public function excluirFornecedor($codigo) {
+	public function excluirFornecedores($codigo) {
 	    try {
 		    $pdo = Conexao::getInstance();
 		    $sql = "DELETE FROM fornecedor WHERE codigo =:codigo";
