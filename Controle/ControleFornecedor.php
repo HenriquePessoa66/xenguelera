@@ -34,7 +34,7 @@ switch ($acao) {
 	   if (isset($_GET['idex'])){
 		   $codigo = $_GET['idex'];
 		   $calssFornecedorDAO = new ClassFornecedorDAO();
-		   $us = $classFornecedorDAO->excluirFornecedor($codigo);
+		   $us = $classFornecedorDAO->excluirFornecedores($codigo);
 		   if ($us == TRUE) {
 			   header('Location:../index.php?PAGINA=listarFornecedor&MSG= Usuario foi excluido com sucesso!');
 		   } else {
